@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #030629;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    box-sizing: border-box; /* Using border-box box model */
+}
+
+/* Music player container styles */
+.music-player {
+    margin: 20px auto;
+    padding: 20px ;
+    background-color: #030629;
+    border: 0;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* Song container styles */
+.song-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+/* Song thumbnail styles */
+.song-thumbnail {
+    width: 300px;
+    border-radius: 5%; /* Rounded corners */
+    margin-bottom: 20px;
+}
+
+/* Song information styles */
+.song-info {
+    text-align: center;
+}
+
+/* Song title styles */
+.song-title {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Song artist styles */
+.song-artist {
+    font-size: 18px;
+}
+
+/* Slider container styles */
+.slider-container {
+    margin-top: 20px;
+}
+
+/* Slider styles */
+.slider {
+    width: 300px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #6a12f8;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+/* Slider thumb styles */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: #6a12f8;
+    cursor: pointer;
+}
+
+/* Song duration styles */
+.song-duration {
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+/* Controls container styles */
+.controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Button styles */
+.prev-btn, .play-pause-btn, .next-btn {
+    background-color: #6a12f8;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 50px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+/* Button hover styles */
+.prev-btn:hover, .play-pause-btn:hover, .next-btn:hover {
+    color: #b3baff;
+    background:#6a12f8; /* Purple background color on hover */
+    box-shadow: 0 0 10px #6a12f8,0 0 10px #6a12f8,0 0 80px #6a12f8 ; /* Adding box shadow on hover */
+}
